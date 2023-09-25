@@ -1,5 +1,3 @@
-'use strict';
-
 import { persons } from './personsInfo.mjs';
 import { formatDate, formatMoney } from './utils.mjs';
 

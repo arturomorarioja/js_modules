@@ -1,5 +1,3 @@
-'use strict';
-
 const manageError = (error) => {
     console.error(error.name + ' - ' + error.message);
 }

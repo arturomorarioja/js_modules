@@ -1,5 +1,3 @@
-'use strict';
-
 export const persons = [
     {
         firstName: 'Mohamed F.',

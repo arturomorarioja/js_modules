@@ -5,7 +5,7 @@ Example of JavaScript ES modules. It displays a formatted list of persons, which
 
 - The HTML code calls `script.js`, which is the only JS file that interacts with the DOM
 - `script.js` calls a function that generates the formatted list in the module `persons.mjs`
-- `persons.js`:
+- `persons.mjs`:
     1. Loads the list of persons from `personsInfo.mjs`
     2. Contains a non-exportable function that formats each person's information, and that calls two utility functions from `utils.mjs`
 - `utils.js` contains a non-exportable function for error management

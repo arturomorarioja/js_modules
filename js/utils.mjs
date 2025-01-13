@@ -21,13 +21,16 @@ export const formatDate = (date) => {
  * @param {*} monetary amount to format
  * @returns the formatted monetary amount
  */
-export const formatMoney = (amount) => {
+export const formatMoney = (
+    amount, 
+    locale = {code: 'da-DK', currency: 'DKK'}
+) => {
     try {
         const DKK = new Intl.NumberFormat(
-            'da-DK', 
+            locale.code, 
             { 
                 style: 'currency', 
-                currency: 'DKK' 
+                currency: locale.currency 
             }
         );
         return DKK.format(amount);

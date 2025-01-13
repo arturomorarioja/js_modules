@@ -9,15 +9,15 @@ import { formatDate, formatMoney } from './utils.mjs';
 const formatPerson = (person) => {
     const personArticle = document.createElement('article');
 
-    const personName = document.createElement('div');
+    const personName = document.createElement('p');
     personName.classList.add('name');
     personName.innerText = person.firstName + ' ' + person.lastName;
 
-    const personBirthDate = document.createElement('div');
+    const personBirthDate = document.createElement('p');
     personBirthDate.classList.add('date');
     personBirthDate.innerText = formatDate(person.birthDate);
 
-    const personSalary = document.createElement('div');
+    const personSalary = document.createElement('p');
     personSalary.classList.add('salary');
     personSalary.innerText = formatMoney(person.salary);
 

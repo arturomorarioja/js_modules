@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
-
 :root {
     --colorTextSecondary: floralwhite;
 
     --colorPrimary: #20408A;
     --colorSecondary: lightgrey;
+
+    --fontMain: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: var(--fontMain);
 }
 
 /* Landmark elements */
@@ -33,12 +36,12 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-}
-footer > p {
-    color: var(--colorTextSecondary);
-    background-color: var(--colorPrimary);
-    border-radius: 0;
-    padding: 0.5rem;
+    > p {
+        color: var(--colorTextSecondary);
+        background-color: var(--colorPrimary);
+        border-radius: 0;
+        padding: 0.5rem;
+    }
 }
 
 section {
